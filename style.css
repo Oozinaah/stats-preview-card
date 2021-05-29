@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif, 'Lexend Deca', sans-serif;;
+}
+
+/*Main content starts here*/
+.card {
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1000px;
+    margin: auto; 
+    margin-top: 5vh;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.content {
+    padding: 30px 100px 0px 60px;
+    flex: 50%;
+}
+
+.numbers-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.numbers {
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+/*Main content stops*/
+
+/*Text starts*/
+
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+}
+
+.purple {
+    color: hsl(277, 64%, 61%);
+}
+
+.content p {
+    line-height: 1.8;
+}
+
+.numbers h2, p{
+    margin: 5px;
+}
+
+.numbers p {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+/*Texts ends*/
+
+/*Style image*/
+.image img  {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*Change color on the image, position:relative; and ::after*/
+.image {
+    flex: 50%;
+    position: relative;
+}
+
+.image::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(140, 4, 224, 0.5);
+    border-radius: 0px 10px 10px 0px;
+}
+
+/*Style image ends*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*Responsive max-width: 970px. Small screens, tablets.*/
+
+@media (max-width: 970px) {
+    .card {
+        max-width: 40%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content {
+        padding: 40px;
+    }
+    .numbers-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .numbers {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+    .image img {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .image::after {
+        border-radius: 10px 10px 0px 0px;
+    }
+    span.nowrap {
+        display: inline-block; /*Text break*/
+    }
+    h1 {
+            font-size: 28px;
+    }
+    h2 {
+            font-size: 22px;
+    }
+    p {
+            font-size: 14px;
+    }
+}
+
+/*Responsive max-width: 970px. Mobile devices.*/
+
+@media (max-width: 375px) {
+    .card {
+        max-width: 85%;
+        /*flex-direction: column;*/
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .content {
+        padding: 20px;
+        flex: 100%;
+    }
+    span.nowrap {
+    display: inline-block; /*Text break*/
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
