@@ -80,4 +80,3 @@ I will continue to make Frontends challenges to improve my skills in HTML, CSS a
 
 - Frontend Mentor - [@Oozinaah](https://www.frontendmentor.io/profile/Oozinaah)
 
-## TEST
